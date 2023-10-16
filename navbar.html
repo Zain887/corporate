@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="desktop">
+        <div class="logoAndContent">
+            <img src="images/logo.svg" alt="logo" />
+            <nav>
+                <li class="navTabs">
+                    <a href="/home.html">How It Works</a>
+                </li>
+                <li class="navTabs">
+                    <a href="/aboutUs.html">About Us</a>
+                </li>
+                <li class="navTabs">
+                    <a href="/contactUs.html">Contact Us</a>
+                </li>
+                <li class="navTabs">
+                    <a href="#">Blog</a>
+                </li>
+            </nav>
+        </div>
+        <div class="loginPhoneWrraper">
+            <a href="#" class="phone">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                    <path
+                        d="M15.554 11.734l-2.232-2.231c-.797-.797-2.151-.478-2.47.558-.24.717-1.036 1.115-1.753.956-1.594-.398-3.746-2.47-4.144-4.144-.239-.717.24-1.514.956-1.753 1.036-.319 1.355-1.673.558-2.47L4.238.418c-.638-.557-1.594-.557-2.152 0L.572 1.932c-1.514 1.594.16 5.818 3.905 9.563 3.745 3.745 7.969 5.499 9.563 3.905l1.514-1.514c.557-.638.557-1.594 0-2.152z"
+                        fill="#18BA70" fill-rule="nonzero"></path>
+                </svg>
+                <span>1 (888) 462-3453</span>
+            </a>
+            <p>Login</p>
+            <a href="#" class="button">
+                Incorporate Now
+            </a>
+        </div>
+    </header>
+    <header class="mobile">
+        <div class="logoAndContent">
+            <img src="images/logo.svg" alt="logo">
+            <img src="images/hamBurgerMenu.svg" alt="logo" onclick="navMove()">
+        </div>
+        <div class="navPopUp" id="navPopUp">
+            <nav>
+                <li class="navTabs">
+                    <a href="/home.html">How It Works</a>
+                </li>
+                <li class="navTabs">
+                    <a href="/aboutUs.html">About Us</a>
+                </li>
+                <li class="navTabs">
+                    <a href="/contactUs.html">Contact Us</a>
+                </li>
+                <li class="navTabs">
+                    <a href="#">Blog</a>
+                </li>
+            </nav>
+            <div class="loginPhoneWrraper">
+                <a href="#" class="phone">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                        <path
+                            d="M15.554 11.734l-2.232-2.231c-.797-.797-2.151-.478-2.47.558-.24.717-1.036 1.115-1.753.956-1.594-.398-3.746-2.47-4.144-4.144-.239-.717.24-1.514.956-1.753 1.036-.319 1.355-1.673.558-2.47L4.238.418c-.638-.557-1.594-.557-2.152 0L.572 1.932c-1.514 1.594.16 5.818 3.905 9.563 3.745 3.745 7.969 5.499 9.563 3.905l1.514-1.514c.557-.638.557-1.594 0-2.152z"
+                            fill="#18BA70" fill-rule="nonzero"></path>
+                    </svg>
+                    <span>1 (888) 462-3453</span>
+                </a>
+                <p class="login">Login</p>
+                <a href="#" class="button">
+                    Incorporate Now
+                </a>
+            </div>
+        </div>
+    </header>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        var menu = document.getElementById('navPopUp');
+        function navMove() {
+            if (menu.style.left === '100%') {
+                menu.style.left = '0%'
+            } else {
+                menu.style.left = '100%'
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 80px;
+}
+
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    padding: 0 40px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #ededed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    z-index: 10;
+}
+
+header nav {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+header .logoAndContent {
+    display: flex;
+    gap: 5vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .navTabs {
+    height: 78px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: max-content;
+}
+
+header nav .navTabs::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #18BA70;
+    transition: width 0.3s ease;
+}
+
+header nav .navTabs:hover::after {
+    width: 100%;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    display: flex;
+    letter-spacing: 1px;
+    gap: 10px;
+}
+
+header nav .navTabs:hover a span {
+    transform: rotate(180deg);
+    transition-duration: .3s;
+}
+
+header .loginPhoneWrraper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vw;
+}
+
+header .loginPhoneWrraper p {
+    color: #1e1e1e;
+    font-weight: 400;
+    margin: 0;
+    font-size: 16px;
+}
+
+header .phone {
+    color: #18BA70;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    overflow: hidden;
+    padding-left: 8px;
+    transition: all .3s ease;
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.button {
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 800;
+    align-items: center;
+    background-color: #18BA70;
+    border: 2px solid #18BA70;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: sans-serif;
+    position: relative;
+    padding: 14px 42px;
+    transition: background-color .3s ease 0s, color .3s ease 0s;
+    text-decoration: none;
+}
+
+.button:hover {
+    color: #18BA70;
+    background-color: white;
+}
+
+.desktop {
+    display: flex;
+}
+
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width:1024px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    header .logoAndContent {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .logoAndContent img:nth-child(2) {
+        width: 20;
+        height: auto;
+    }
+
+    header nav {
+        display: inline-block;
+    }
+
+    header nav .navTabs {
+        height: 50px;
+    }
+
+    .navPopUp {
+        height: 100vh;
+        width: 100%;
+        display: block;
+        background-color: rgb(255, 255, 255);
+        position: fixed;
+        left: 100%;
+        top: 80px;
+        padding: 0 20px;
+        box-sizing: border-box;
+        transition-duration: 0.5s;
+    }
+
+    header .loginPhoneWrraper {
+        display: block;
+        text-align: center;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    header .phone {
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    header .loginPhoneWrraper p {
+        margin-bottom: 25px;
+    }
+}

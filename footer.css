@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    background-color: white;
+}
+
+.footerContent {
+    width: 1170px;
+    margin: auto;
+}
+
+.footerWrapper {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #e1dedef5;
+}
+
+footer .footerWrapper .footer-social {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+}
+
+footer .footerWrapper p {
+    color: #4f4f4f;
+    font-family: Avenir, sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0;
+    max-width: 320px;
+    padding: 15px 0;
+    text-align: left;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-nav-wrapper-outer {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+footer .footer-nav-wrapper-outer p {
+    color: #757575;
+    font-family: 'MarkPro', sans-serif;
+    font-size: 16px;
+    line-height: 14px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+}
+
+footer .footer-nav-wrapper-inner ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footerWrapper .footer-social li {
+    width: 32px;
+    height: 32px;
+}
+
+footer .footer-nav-wrapper-inner ul li a {
+    color: #757575;
+    font-family: 'Avenir', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    text-decoration: none;
+    transition: color .3s ease 0s;
+}
+
+footer .footer-nav-wrapper-inner ul li a:hover {
+    color: #18BA70;
+}
+
+footer .footer-nav-wrapper-outer span {
+    display: none;
+}
+
+footer .logoMailWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+footer .logoMailWrapper img {
+    width: 80px;
+    height: 24px;
+}
+
+footer .logoMailWrapper .mailContent form {
+    display: flex;
+    align-items: center;
+    width: 398.66px;
+    gap: 8px;
+}
+
+footer .logoMailWrapper .mailContent {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #1e1e1e;
+    font-family: 'MarkPro', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0;
+    font-weight: 800;
+}
+
+footer .logoMailWrapper .mailContent span {
+    color: #757575;
+    font-family: 'Avenir', sans-serif;
+    padding-left: 5px;
+    font-weight: 100;
+}
+
+footer .logoMailWrapper .mailContent img {
+    width: 12px;
+    height: auto;
+}
+
+footer .logoMailWrapper .mailContent input {
+    background: transparent;
+    border: 1px solid #e9e9e9;
+    border-radius: 24px;
+    color: #1e1e1e;
+    font-family: Avenir, sans-serif;
+    font-size: 14px;
+    height: 40px;
+    line-height: 17px;
+    padding: 6px 24px;
+    text-align: left;
+    box-sizing: border-box;
+    transition: border-color .3s ease 0s;
+    width: 100%;
+}
+
+footer .logoMailWrapper .mailContent button {
+    color: #18BA70;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: inherit;
+    font-weight: 800;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #18BA70;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    margin: 0 auto 0 0;
+    position: relative;
+    padding: 6px 30px;
+    transition: background-color .3s ease 0s, color .3s ease 0s;
+}
+
+footer .logoMailWrapper .mailContent button:hover {
+    color: white;
+    background-color: #18BA70;
+}
+
+footer .logoMailWrapper .mailContent button svg {
+    position: relative;
+    right: 0px;
+    transition: right .3s ease 0s, color .3s ease 0s;
+}
+
+footer .logoMailWrapper .mailContent button:hover svg {
+    right: -10px;
+}
+
+footer .logoMailWrapper .mailContent button svg path {
+    fill: #18BA70;
+}
+
+footer .logoMailWrapper .mailContent button:hover svg path {
+    fill: white;
+}
+
+footer .logoMailWrapper .mailContent input:hover {
+    border-color: #18BA70;
+}
+
+footer .logoMailWrapper .mailContent input:focus {
+    outline: none;
+}
+
+.descriptionFooter {
+    font-size: 14px;
+    text-transform: capitalize;
+    width: 300px;
+    line-height: inherit;
+}
+
+@media screen and (max-width:1024px) {
+    .descriptionFooter {
+        font-size: 14px;
+        text-transform: capitalize;
+        width: 300px;
+        line-height: inherit;
+        margin: 35px auto;
+        text-align: center;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .footerContent {
+        width: 100%;
+        margin: auto;
+    }
+
+    .footerWrapper {
+        padding: 20px;
+        display: block;
+    }
+
+    footer .footerWrapper .footer-social {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+        margin: 0;
+        justify-content: center;
+        padding: 0;
+    }
+
+    footer .footerWrapper p {
+        color: #4f4f4f;
+        font-family: 'Avenir', sans-serif;
+        font-size: 16px;
+        line-height: 19px;
+        margin: 0;
+        text-align: center;
+    }
+
+    footer nav {
+        display: block;
+    }
+
+    footer .footer-nav-wrapper-outer {
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    footer .footer-nav-wrapper-outer span {
+        display: block;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    footer .logoMailWrapper {
+        display: block;
+        padding: 0 20px;
+    }
+
+    footer .logoMailWrapper .mailContent {
+        display: block;
+        margin-top: 30px;
+    }
+
+    footer .logoMailWrapper .mailContent form {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    footer .logoMailWrapper .mailContent button {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
